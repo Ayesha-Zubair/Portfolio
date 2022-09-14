@@ -1,0 +1,173 @@
+:root{
+    --primary-color:white;
+    --secondary-color:black;
+    --primary-alt-color:#0284C7;
+    --secondary-alt-color:white;
+}
+
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--primary-color);
+} 
+
+.navbar{
+    font-size:large;
+    font-weight: 600;
+    background-color:var(--primary-color);
+    padding-left:6%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    z-index: 1;
+}
+#navbar-brand{
+    font-size:xx-large;
+    font-stretch:extra-expanded;
+    color: var(--secondary-color);
+}
+#brandicon{
+    width:45px;
+    height: 45px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    margin-top: 1%;
+    color:var(--secondary-color);
+    cursor: pointer;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #6c6f98;
+}
+
+#navbarNav{
+    justify-content: flex-end;
+}
+
+#icon{
+    width:35px;
+    height: 35px;
+}
+
+#icon2{
+    width:90%;
+    height:90%;
+}
+
+#icon3{
+    width: 70px;
+    height: 70px;
+}
+
+#about{
+    padding-top: 3%;
+    margin-top: 100px;
+    color: var(--primary-alt-color);
+}
+
+
+#name{
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#row1{
+    padding-left:3%;
+}
+
+#desc{
+    font-size: 20px;
+}
+
+#heading{
+    width: 80%;
+    margin: auto;
+    color: var(--primary-alt-color);
+}
+
+section{
+    color: var(--secondary-color);
+    font-size: larger;
+}
+
+#skillsec{
+    margin-bottom: 150px;
+}
+
+#skills{
+    padding:20px 10px;
+    width: 80%;
+    background-color:#D9E3FD;
+    border: #D9E3FD 2px solid;
+    border-radius: 20px;
+    color:#0284C7;
+}
+
+#tech{
+    padding: 10px 5px;
+}
+
+#icon3:hover{
+    transform: scale(1.1);
+}
+
+.btn-primary{
+    padding: 2% 10%;
+}
+
+.navbar.scrolled{
+    background-color: #0d6efd;
+    color: var(--secondary-color);
+    font-size:large;
+    font-weight: 600;
+    transition: background 500ms;
+}
+
+.navbar.scrolled #navbar-brand{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.navbar.scrolled .navbar-light .navbar-nav .nav-link{
+    color: var(--secondary-color);
+}
+.navbar.scrolled #navItems:hover{
+    color: rgb(199, 223, 250);
+}
+
+#dark{
+    width: 30px;
+    cursor: pointer;
+}
+
+.dark-theme{
+    --primary-color:#414464;
+    --secondary-color:white;
+    --primary-alt-color: white;
+    --secondary-alt-color: #0284C7;
+}
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  p,h3 {
+    animation: 2s 0s 1 slideInLeft;
+  }
+
+  #icon2 {
+    animation: 3s ease-in-out slide-left;
+  }
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
